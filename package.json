@@ -1,0 +1,45 @@
+{
+  "name": "react-children-reveal",
+  "version": "1.0.0",
+  "description": "Simple react library to progressively reveal children components",
+  "author": "BonjourInternet",
+  "license": "MIT",
+  "repository": "/react-children-reveal",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.1",
+    "react-dom": ">=16.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "nanoid": "^3.1.22",
+    "prop-types": "^15.7.2",
+    "react": "*",
+    "react-dom": "*",
+    "rollup": "^2.47.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-sass": "^1.2.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "npm",
+    "animation",
+    "css",
+    "children"
+  ]
+}

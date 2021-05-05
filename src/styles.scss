@@ -1,0 +1,63 @@
+@keyframes _react-children-reveal-fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes _react-children-reveal-vslidein {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes _react-children-reveal-hslidein {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes _react-children-reveal-zoomin {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.__react-children-reveal {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  
+  &.__rcr_fadein {
+    animation-name: _react-children-reveal-fadein;
+  }
+  
+  &.__rcr_zoomin {
+    animation-name: _react-children-reveal-zoomin;
+  }
+  
+  &.__rcr_vslidein {
+    animation-name: _react-children-reveal-vslidein;
+    transform-origin: 0 0;
+  }
+  
+  &.__rcr_hslidein {
+    animation-name: _react-children-reveal-hslidein;
+    transform-origin: 0 0;
+  }
+}
