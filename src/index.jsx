@@ -51,11 +51,11 @@ const ChildrenReveal = ({
 }
 
 ChildrenReveal.propTypes = {
-  onRevealed: PropTypes.func,
-  onEnd: PropTypes.func,
-  type: PropTypes.oneOf(animationNames),
   delay: PropTypes.number,
+  onEnd: PropTypes.func,
+  onRevealed: PropTypes.func,
   time: PropTypes.number,
+  type: PropTypes.oneOf(animationNames),
   children: PropTypes.arrayOf(PropTypes.element)
 }
 
