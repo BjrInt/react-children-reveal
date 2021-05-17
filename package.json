@@ -4,7 +4,7 @@
   "description": "Simple react library to progressively reveal children components",
   "author": "BonjourInternet",
   "license": "MIT",
-  "repository": "/react-children-reveal",
+  "repository": "BjrInt/react-children-reveal",
   "main": "dist/index.js",
   "engines": {
     "node": ">=8",
