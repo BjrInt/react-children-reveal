@@ -2,11 +2,13 @@
 
 > `npm i react-children-reveal`
 
-Simple react library to progressively reveal children components. 
+Simple and efficient react library to progressively reveal children components. 
+
+Works with React > 16.8+ (needs hooks support) and uses CSS animations under the hood.
 
 ## Basic usage
 
-By wrapping child components inside a RCR (react-children-reveal) wrapper you'll ensure that 
+Simply wrap children components inside a RCR (react-children-reveal) component to make them appear gradually. 
 
 ```javascript
 import RCR from 'react-children-reveal'
@@ -100,6 +102,10 @@ const TodoList = props => {
   )
 }
 ```
+
+## Caveats
+
+Since RCR relies on CSS transforms and animations, child component cannot have a transform or animation property tied to them.
 
 ## Contributing
 
