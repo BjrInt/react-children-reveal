@@ -1,6 +1,6 @@
 {
   "name": "react-children-reveal",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple react library to progressively reveal children components",
   "author": "BonjourInternet",
   "license": "MIT",
@@ -15,8 +15,8 @@
     "start": "rollup -c -w"
   },
   "peerDependencies": {
-    "react": ">=16.0.1",
-    "react-dom": ">=16.0.1"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
