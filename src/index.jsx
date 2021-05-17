@@ -37,7 +37,7 @@ const ChildrenReveal = ({
           iChild <= iterator &&
           React.cloneElement(child, {
             onAnimationEnd: () => revealNextChild(),
-            className: child.className + ' __react-children-reveal __rcr_' + type,
+            className: child.props.className + ' __react-children-reveal __rcr_' + type,
             style: {
               ...child.props.style,
               animationDelay: delay / 1000 + 's',
