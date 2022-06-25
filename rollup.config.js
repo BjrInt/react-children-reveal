@@ -1,5 +1,5 @@
 import sass from 'rollup-plugin-sass'
-import babel from "rollup-plugin-babel";
+import babel from 'rollup-plugin-babel'
 import pkg from './package.json'
 
 export default {
@@ -10,14 +10,14 @@ export default {
       format: 'cjs',
       exports: 'named',
       sourcemap: true,
-      strict: false
-    }
+      strict: false,
+    },
   ],
   plugins: [
     sass({ insert: true }),
     babel({
-      exclude: "node_modules/**"
+      exclude: 'node_modules/**',
     }),
   ],
-  external: ['react', 'react-dom']
+  external: ['react', 'react-dom'],
 }
