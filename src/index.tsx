@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
-import './styles.scss'
 import { nanoid } from 'nanoid'
 
-import { defaultProps, RCRProps } from './types'
+import { defaultProps, RCRElement } from './types'
+import './styles.scss'
 
-const animationNames = ['fadein', 'zoomin', 'hslidein', 'vslidein']
+const ChildrenReveal = (_props : Partial<RCRElement>) => {
+  const props = { 
+    ..._props,
+    ...defaultProps
+  }
 
-const ChildrenReveal = (props : RCRProps = defaultProps) => {
+  if(props.children === undefined)
+    throw TypeError('Children elements are expected')
+  
   const [iterator, setIterator] = useState(0)
 
   const revealNextChild = () => {

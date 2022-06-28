@@ -5,8 +5,9 @@ export enum AnimationTypes {
   'H_SLIDE_IN' = 'hslidein',
 }
 
-export type RCRProps = {
-  children?: JSX.Element[],
+const nullFn = () => null
+
+type RCRProps = {
   delay: number,
   onRevealed: Function, 
   onEnd: Function,
@@ -14,7 +15,11 @@ export type RCRProps = {
   type: AnimationTypes,
 }
 
-const nullFn = () => null
+type RCRChildren = {
+  children: JSX.Element[],
+}
+
+export type RCRElement = RCRProps & RCRChildren
 
 export const defaultProps : RCRProps = {
   delay: 0,
